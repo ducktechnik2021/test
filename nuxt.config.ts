@@ -6,8 +6,7 @@ export default defineNuxtConfig({
     preset:'node-server',
     esbuild:{
       options:{
-        platform:'node',
-        target:'node22'
+        format:'esm',
       }
     }
   }
