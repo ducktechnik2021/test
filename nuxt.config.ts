@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   nitro:{
-    preset:'node-server'
+    preset:'node-server',
+    esbuild:{
+      options:{
+        platform:'node',
+        target:'node22'
+      }
+    }
   }
 })
