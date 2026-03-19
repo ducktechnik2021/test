@@ -2,11 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  // nitro:{
-  //   storage:{
-  //     default:{
-  //       driver:'memory'
-  //     }
-  //   }
-  // }
+  nitro:{
+    preset:'node-server'
+  }
 })
